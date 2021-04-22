@@ -1,5 +1,4 @@
 import React from "react";
-import Wrapper from "./components/wrapper";
 import Header from "./components/header";
 import Navigation from "./components/navigation";
 import EmployeeCard from "./components/empolyee-card";
