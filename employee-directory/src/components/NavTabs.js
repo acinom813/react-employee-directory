@@ -1,4 +1,6 @@
-import React from "react";
+import React, {Component} from "react";
+import API from "../Utils/API";
+
 
 function NavTabs({ onSearch, searchTerm, handleSortByName, handleSortByDept }) {
     return (
@@ -14,9 +16,40 @@ function NavTabs({ onSearch, searchTerm, handleSortByName, handleSortByDept }) {
                type="text"
                placeholder="Search Employees" />
         </form>
+        class NavTabs extends Component{
+            state = {
+                results: [],
+                search: ""
+            };
+      
+        
+        componentDidMount() {
+            axios.get("https://randomuser.me/api/?results=100")
+                .then(res => this.setState({employees: res.data.results}))
+                .catch(err => console.log(err));
+        }
+
+            searchEmployees = query => {
+                API.search(query)
+                .then(res => this.setState({result: res.data}))
+                .catch(err => console.log(err));
+            };
+
+
+        handleInputChange = event =>  {
+           const { name, value } = event.target;
+           this.setState({
+               [name]: value
+           });
+        };
+
+
+
+
     </div>  
 
     )
+}
 }
 
 export default NavTabs;
