@@ -18,3 +18,5 @@ function NavTabs({ onSearch, searchTerm, handleSortByName, handleSortByDept }) {
 
     )
 }
+
+export default NavTabs;
