@@ -19,7 +19,9 @@ function NavTabs({ onSearch, searchTerm, handleSortByName, handleSortByDept }) {
         class NavTabs extends Component{
             state = {
                 results: [],
-                search: ""
+                search: "",
+                employees:[{}],
+
             };
       
         
@@ -29,19 +31,27 @@ function NavTabs({ onSearch, searchTerm, handleSortByName, handleSortByDept }) {
                 .catch(err => console.log(err));
         }
 
-            searchEmployees = query => {
-                API.search(query)
-                .then(res => this.setState({result: res.data}))
-                .catch(err => console.log(err));
-            };
-
 
         handleInputChange = event =>  {
-           const { name, value } = event.target;
-           this.setState({
-               [name]: value
-           });
+             const searchedEmployees = event.target.value;
+             const sortEmployees =  this.state.employees.filter(employee => {
+                 const employeeInfo = {
+                     name: `${employee.name.first} ${employees.name.last}`,
+                     department: empoloyee.dept,
+                     email: employee.email
+                 }
+
+               
+             })
+           this.setState({ search: event. target.value });
         };
+
+        handleFormSubmit = event => {
+           
+            event.preventDefault();
+            API.get
+           this.searchEmployees(this.state.search);
+        }
 
 
 
