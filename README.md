@@ -5,7 +5,7 @@ The employee directory was designed to allow managers or employees to search an 
 
 
 
-Screen Shot 2021-05-03 at 2.47.14 PM-1.png
+![](assets /employeedirectory.png)
 
 ## Links
 
