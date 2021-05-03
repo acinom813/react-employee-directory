@@ -5,7 +5,7 @@ The employee directory was designed to allow managers or employees to search an 
 
 
 
-![](assets /employeedirectory.png)
+![](assets/employeedirectory.png)
 
 ## Links
 
