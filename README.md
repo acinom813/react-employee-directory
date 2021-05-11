@@ -5,11 +5,12 @@ The employee directory was designed to allow managers or employees to search an 
 
 
 
-![](assets/employeedirectory.png)
+![](assets /employeedirectory.png)
 
 ## Links
 
 Github: https://github.com/acinom813/react-employee-directory
+
 Deployed: https://acinom813.github.io/react-employee-directory/
 
 
