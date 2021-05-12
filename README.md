@@ -19,7 +19,7 @@ npm i
 npx create-react-app my-app
 
 ## Usage
-Utilize API to access empoloyee data and return search results
+Utilize API to access employee data and return search results.
 
 ## License
 N/A
