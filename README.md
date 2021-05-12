@@ -36,7 +36,7 @@ I am open to questions and suggestions regarding this and all projects. Feel fre
 
 
 
-![](assets /employeedirectory.png)
+![](assets/employeedirectory.png)
 
 ## Links
 
